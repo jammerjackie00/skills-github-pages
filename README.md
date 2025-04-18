@@ -1,54 +1,122 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lore of Blasphemous</title>
+    <style>
+        @font-face {
+            font-family: 'Badboys';
+            src: url('C:\Users\Del\OneDrive - Department of Education\Documents\blasphemous/blasphemous.ttf') format('truetype'); 
+            font-weight: normal;
+            font-style: normal;
+        }
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+        body {
+            font-family: 'Badboys', Arial, sans-serif; /* Apply the Badboys font */
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/736x/5c/e8/ff/5ce8ff3feb6b0a564b1e13a275f2f70d.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px;
+        }
+        .content h2 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .content p, .content ul {
+            line-height: 1.6;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blasphemous</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://store.steampowered.com/app/774361/Blasphemous/" target="_blank">Steam page</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Blasphemous_(video_game)">About</a></li>
+            <li><a href="https://www.ign.com/games/blasphemous">Ratings</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content">
+            <h2>The Lore</h2>
+            <p>Blasphemous is set in the dark and oppressive world of Cvstodia, a land cursed by a mysterious force known as The Miracle. This curse twists the inhabitants' faith and guilt into physical manifestations, resulting in grotesque deformities and eternal suffering. 
 
-# GitHub Pages
+You play as the Penitent One, the last survivor of the Brotherhood of the Silent Sorrow. The Penitent One embarks on a journey of brutal penance, wielding the Mea Culpa sword, to rid Cvstodia of The Miracle and seek redemption for his sins. The world is filled with religious symbolism, drawing heavily from Spanish Catholicism, where suffering, martyrdom, and the pursuit of absolution are central themes. 
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+As the Penitent One battles nightmarish creatures and bosses, he uncovers the tragic stories of others cursed by The Miracle, all while confronting the weight of his own guilt and the cyclical nature of sin and redemption.</p>
 
-</header>
+            <!-- Blasphemous GIF -->
+            <img src="https://media.tenor.com/4ZRa4bwr_VgAAAAC/blasphemy.gif" alt="Blasphemous Lore GIF" style="width:100%; max-width:800px; margin-top:20px;">
+            
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Playing video games</li>
+                <li>Learning new coding skills</li>
+                <li>Reading books</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+         2024 A fan made website about Blasphemous 
+    </footer>
+</body>
+</html>
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
-
-## Step 1: Enable GitHub Pages
-
-_Welcome to GitHub Pages and Jekyll :tada:!_
-
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
-
-### :keyboard: Activity: Enable GitHub Pages
-
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
